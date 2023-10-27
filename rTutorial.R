@@ -167,3 +167,141 @@ e
 class(e)
 y
 class(y)
+
+## R Math / Simple Math
+
+num1 <- 2
+num2 <- 4
+
+num1 + num2
+num1 * num2
+num1 / num2
+num1 - num2
+num1 ^ num2
+
+## R Math / Built-in Math Functions
+
+max(5, 6, 20)
+min(1, -3, 9)
+
+num1 <- 5
+num2 <- 15
+num3 <- -4
+
+max(num1, num2, num3)
+min(num1, num2, num3)
+
+sqrt(16) # karekök
+
+abs(-2.3) # mutlak
+
+ceiling(2.7) # yukarı yuvarlama
+floor(2.7) # aşağı yuvarlama
+
+## R String / String Literals
+
+"Forensic Science"
+'Forensic Science'
+
+## R String / Assign a String to a Variable
+
+text <- "Forensic Science"
+
+text
+
+## R String / Multiline Strings
+
+multi <- "Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."
+
+multi
+
+cat(multi) # same line breaks
+
+## R String / String Length
+
+length <- "Forensic Science"
+
+nchar(length)
+
+## R String / Check a String
+
+text <- "Forensic Science"
+
+grepl("F", text)
+grepl("f", text)
+grepl(" ", text)
+grepl("Q", text)
+
+## R String / Combine Two Strings
+
+one <- "Forensic"
+two <- "Science"
+
+paste(one, two)
+paste(one + two) # ERROR
+
+## R String / Escape Characters
+
+# str <- "Forensic "Science" in Turkey."
+str1 <- "Forensic 'Science' in Turkey."
+str2 <- "Forensic \"Science\" in Turkey."
+
+str
+str1
+str2
+
+newline <- "Forensic\n Science"
+
+newline
+cat(newline) # without backslash
+
+backslash <- "Forensic\\ Science"
+
+backslash
+cat(backslash)
+
+carriagereturn <- "Forensic\r Science"
+
+carriagereturn
+cat(carriagereturn)
+
+tab <- "Forensic \t Science"
+
+tab
+cat(tab)
+
+backspace <- "Forensic\b Science"
+
+backspace
+cat(backspace)
+
+# R Booleans
+
+10 == 10
+10 == 11
+
+a <- 10
+b <- 11
+
+a > b
+
+c <- 100
+d <- 50
+
+if (c > d) {
+  print ("c > d")
+} else {
+  print("c < d")
+}
+
+c <- 10
+d <- 50
+
+if (c > d) {
+  print("c > d")
+} else {
+  print("c < d")
+}

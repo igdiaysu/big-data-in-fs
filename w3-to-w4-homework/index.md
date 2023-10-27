@@ -108,11 +108,99 @@ Remember that variable names are case-sensitive!
 
 ### R Math
 
+#### Simple Math
+
+![simple-math-00](image/simple-math-00.png)
+
+#### Built-in Math Functions
+
+![simple-math-01](image/simple-math-01.png)
+![simple-math-02](image/simple-math-02.png)
+
 ### R Strings
+
+#### [String: String Literals](#string-multiline-strings)
+
+#### [String: Assign a String to a Variable](#string-multiline-strings)
+
+#### String: Multiline Strings
+
+```
+If you want the line breaks to be inserted at the same position as in the code, use the cat() function:
+```
+
+![string-00](image/string-00.png)
+
+#### [String: String Length](#string-combine-two-strings)
+
+#### [String: Check a String](#string-combine-two-strings)
+
+```
+Use the grepl() function to check if a character or a sequence of characters are present in a string:
+```
+
+#### String: Combine Two Strings
+
+![string-01](image/string-01.png)
+
+#### Escape Characters
+
+| Code | Result          |
+| ---- | --------------- |
+| \\   | Backslash       |
+| \n   | New Line        |
+| \r   | Carriage Return |
+| \t   | Tab             |
+| \b   | Backspace       |
+
+![string-02](image/string-02.png)
 
 ### R Booleans
 
+![booleans-00](image/booleans-00.png)
+
 ### R Operators
+
+#### Arithmetic operators
+
+| Operator | Name                              | Example |
+| -------- | --------------------------------- | ------- |
+| +        | Addition                          | x + y   |
+| -        | Subtraction                       | x - y   |
+| \*       | Multiplication                    | x \* y  |
+| /        | Division                          | x / y   |
+| ^        | Exponent                          | x ^ y   |
+| %%       | Modulus (Remainder from division) | x %% y  |
+| %/%      | Integer Division                  | x%/%y   |
+
+#### Assignment operators
+
+img
+
+```
+Note: <<- is a global assigner. You will learn more about this in the Global Variable chapter.
+```
+
+#### Comparison operators
+
+| Operator | Name                     | Example |
+| -------- | ------------------------ | ------- |
+| ==       | Equal                    | x == y  |
+| !=       | Not equal                | x != y  |
+| >        | Greater than             | x > y   |
+| <        | Less than                | x < y   |
+| >=       | Greater than or equal to | x >= y  |
+| <=       | Less than or equal to    | x <= y  |
+
+#### Logical operators
+
+- & - Element-wise Logical AND operator. It returns TRUE if both elements are TRUE
+- && - Logical AND operator - Returns TRUE if both statements are TRUE
+- | - Elementwise- Logical OR operator. It returns TRUE if one of the statement is TRUE
+- || - Logical OR operator. It returns TRUE if one of the statement is TRUE.
+- ! - Logical NOT - returns FALSE if statement is TRUE
+
+#### Miscellaneous operators
 
 ### R If...Else
 
