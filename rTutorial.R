@@ -41,8 +41,8 @@ for (x in 1:10) {
 name <- "Aysu"
 age <- 21
 
-namee = "Aysu"
-agee = 21
+namee <- "Aysu"
+agee <- 21
 
 ## R Variables / Variables #print-output
 
@@ -71,7 +71,7 @@ num1 + num2
 num1 * num2
 num1 / num2
 num1 - num2
-num1 ^ num2
+num1^num2
 
 text1 <- "deneme"
 num3 <- 3
@@ -177,7 +177,7 @@ num1 + num2
 num1 * num2
 num1 / num2
 num1 - num2
-num1 ^ num2
+num1^num2
 
 ## R Math / Built-in Math Functions
 
@@ -201,7 +201,7 @@ floor(2.7) # aşağı yuvarlama
 ## R String / String Literals
 
 "Forensic Science"
-'Forensic Science'
+"Forensic Science"
 
 ## R String / Assign a String to a Variable
 
@@ -292,7 +292,7 @@ c <- 100
 d <- 50
 
 if (c > d) {
-  print ("c > d")
+  print("c > d")
 } else {
   print("c < d")
 }
@@ -305,3 +305,226 @@ if (c > d) {
 } else {
   print("c < d")
 }
+
+## R Operators / Aritmetic
+
+4 + 2
+4 - 2
+4 * 2
+4 / 2
+4^2
+4 %% 2
+2 %/% 2
+
+## R Operators / Assignment
+
+x <<- "global assigner"
+
+## R Operators / Comparison
+
+4 == 2
+4 != 2
+4 > 2
+4 < 2
+4 >= 2
+4 <= 2
+
+## R If ... Else / The if Statement
+
+a <- "Forensic"
+b <- "Science"
+
+if (a > b) {
+  print("Equal")
+} else {
+  print("ERROR")
+}
+
+a <- 2
+b <- 4
+
+if (a == b) {
+  print("Equal")
+} else {
+  print("Not Equal")
+}
+
+a <- 4
+b <- 2
+
+if (a == b) {
+  print()
+}
+
+if (a == b) {
+  print("Equal")
+} else if (a < b) {
+  print("a < b - checked")
+} else {
+  print("ERROR")
+}
+
+## R If ... Else / Nested If
+
+x <- 4
+
+if (x > 0) {
+  print("Above 0")
+  if (x > 10) {
+    print("below 10")
+  } else {
+    print("above 10")
+  }
+} else {
+  print("below 0")
+}
+
+## R If ... Else / And Or
+
+a <- 2
+b <- 4
+c <- 8
+
+if (a < b & c == 2 * b) {
+  print("TRUE x2")
+} else {
+  print("NOT x2 TRUE")
+}
+
+if (a > b | c == 3 * b) {
+  print("Min x1 TRUE")
+} else {
+  print("False x2")
+}
+
+if (a > b | c == 3 * b) {
+  print("Min x1 TRUE")
+} else {
+  print("False x2")
+}
+
+## R While Loop
+
+i <- 11
+
+while (i > 10 & i < 40) {
+  print(i)
+  i <- i + 1
+}
+
+## R While Loop / Break
+
+while (i > 10 & i < 40) {
+  print(i)
+  i <- i + 1
+  if (i == 35) {
+    break
+  }
+}
+
+## R While Loop / If...Else
+
+while (i > 10 & i < 40) {
+  if (i < 35) {
+    print("i < 35")
+  } else {
+    (i >= 35)
+    print("i = 35 | i > 35")
+  }
+  i <- i + 1
+}
+
+## R For Loop
+
+for (x in 1:20) {
+  print(x)
+}
+
+a <- list("1", "2", "3", "4", "5", "6")
+
+for (x in a) {
+  print(x)
+}
+
+b <- c(1, 2, 3, 4)
+
+for (x in b) {
+  print(x)
+}
+
+## R For Loop / Break
+
+a <- list("1", "2", "3", "4", "5", "6")
+
+for (x in a) {
+  if (x == "4") {
+    break
+  }
+  print(x)
+}
+
+## R For Loop / Next
+
+a <- list("1", "2", "3", "4", "5", "6")
+
+for (x in a) {
+  if (x == "4") {
+    next
+  }
+  print(x)
+}
+
+## R For Loop / If .. Else Combined with a For Loop
+
+a <- 1:10
+
+for (x in a) {
+  if (x == 7) {
+    print(paste("Winner:", x))
+  } else {
+    print(paste("Result:", x))
+  }
+}
+
+## R For Loop / Nested Loop
+
+a <- 1:5
+b <- list("a", "b", "c", "d", "e")
+
+for (x in a) {
+  for (y in b) {
+    print(paste(x, y))
+  }
+}
+
+## R Functions
+
+f <- function(name1) {
+  paste(name1, "Yılmaz")
+}
+
+f("Ali")
+f("Gül")
+f("Hazar")
+
+f <- function(name, lastname) {
+  paste(name, lastname)
+}
+
+f("Aysu", "İğdi")
+f("Gül", "Yılmaz")
+f("Hazar", "Demir")
+
+y <- function(name, lastname = "Tam") {
+  paste("I am", name, lastname)
+}
+
+y("Aysu", "İğdi")
+y("Gül", )
+
+f <- function(x) {
+  return(10 * x)
+}
+
+print(f(4))
+print(f(5))

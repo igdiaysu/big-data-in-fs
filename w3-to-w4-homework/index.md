@@ -1,5 +1,8 @@
 # R - Homework
 
+Adı Soyadı : Aysu İğdi  
+Numara : 200207016
+
 ## R Tutorial
 
 ### R Home
@@ -157,7 +160,7 @@ Use the grepl() function to check if a character or a sequence of characters are
 
 ### R Booleans
 
-![booleans-00](image/booleans-00.png)
+## ![booleans-00](image/booleans-00.png)
 
 ### R Operators
 
@@ -173,9 +176,7 @@ Use the grepl() function to check if a character or a sequence of characters are
 | %%       | Modulus (Remainder from division) | x %% y  |
 | %/%      | Integer Division                  | x%/%y   |
 
-#### Assignment operators
-
-img
+#### [Assignment operators](#comparison-operators)
 
 ```
 Note: <<- is a global assigner. You will learn more about this in the Global Variable chapter.
@@ -192,7 +193,9 @@ Note: <<- is a global assigner. You will learn more about this in the Global Var
 | >=       | Greater than or equal to | x >= y  |
 | <=       | Less than or equal to    | x <= y  |
 
-#### Logical operators
+![operators-00](image/operators-00.png)
+
+#### Logical operators (reading)
 
 - & - Element-wise Logical AND operator. It returns TRUE if both elements are TRUE
 - && - Logical AND operator - Returns TRUE if both statements are TRUE
@@ -200,12 +203,75 @@ Note: <<- is a global assigner. You will learn more about this in the Global Var
 - || - Logical OR operator. It returns TRUE if one of the statement is TRUE.
 - ! - Logical NOT - returns FALSE if statement is TRUE
 
-#### Miscellaneous operators
+#### Miscellaneous operators (reading)
 
-### R If...Else
+| Operator | Description                                | Example      |
+| -------- | ------------------------------------------ | ------------ |
+| :        | Creates a series of numbers in a sequence  | x <- 1:10    |
+| %in%     | Find out if an element belongs to a vector | x %in% y     |
+| %\*%     | Matrix Multiplication x <- Matrix1         | %\*% Matrix2 |
+
+### [R If...Else](#the-if-statement)
+
+#### [If...Else: Conditions and If Statements (reading)](#the-if-statement)
+
+#### If...Else: The if Statement
+
+![if-else-00](image/if-else-00.png)
+
+#### Nested If
+
+![if-else-01](image/if-else-01.png)
+
+#### And Or
+
+| A   | B   | AND | OR  |
+| --- | --- | --- | --- |
+| 0   | 0   | 0   | 0   |
+| 0   | 1   | 0   | 1   |
+| 1   | 0   | 0   | 1   |
+| 1   | 1   | 1   | 1   |
+
+![if-else-02](image/if-else-02.png)
 
 ### R While Loop
 
+```
+With the while loop we can execute a set of statements as long as a condition is TRUE:
+```
+
+![while-00](image/while-00.png)
+
+#### Break
+
+![while-01](image/while-01.png)
+
+#### Next
+
+![while-02](image/while-02.png)
+
+#### If .. Else Combined with a While Loop
+
+![while-03](image/while-03.png)
+
 ### R For Loop
 
+![for-00](image/for-00.png)
+
+#### Break & Next
+
+![for-01](image/for-01.png)
+
+#### If .. Else Combined with a For Loop
+
+![for-02](image/for-02.png)
+
+#### Nested Loop
+
+![for-03](image/for-03.png)
+
 ### R Functions
+
+![function-00](image/function-00.png)
+
+![function-01](image/function-01.png)
