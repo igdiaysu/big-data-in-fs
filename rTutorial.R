@@ -515,6 +515,8 @@ f("Aysu", "İğdi")
 f("Gül", "Yılmaz")
 f("Hazar", "Demir")
 
+# R Functions / Functions: Default Parameter Value
+
 y <- function(name, lastname = "Tam") {
   paste("I am", name, lastname)
 }
@@ -522,9 +524,43 @@ y <- function(name, lastname = "Tam") {
 y("Aysu", "İğdi")
 y("Gül", )
 
+# R Functions / Functions: Return Values
+
 f <- function(x) {
   return(10 * x)
 }
 
 print(f(4))
 print(f(5))
+
+# R Functions / Nested Functions
+
+f <- function(x, y) {
+  a <- paste(x, y)
+}
+
+print(f(f("A", "B"), f("C", "D")))
+
+f_out <- function(x) {
+  f_in <- function(y) {
+    b <- paste(x, y)
+    return(b)
+  }
+  return(f_in)
+}
+
+g <- f_out("2")
+print(g("A"))
+
+
+
+tri_recursion <- function(k) {
+  if (k > 0) {
+    result <- k + tri_recursion(k - 1)
+    print(result)
+  } else {
+    result <- 0
+    return(result)
+  }
+}
+tri_recursion(6)
